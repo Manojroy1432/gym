@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 text-gray-800;
+  }
+  .btn {
+    @apply bg-gradient-to-r from-orange-500 via-orange-700 to-orange-600 hover:bg-orange-900 duration-100 px-3 py-2 cursor-pointer md:px-4 md:py-3 text-white rounded-sm font-semibold;
+  }
+  .btn-white {
+    @apply bg-white hover:bg-gray-200 duration-100 px-3 py-1 cursor-pointer md:px-4 md:py-3  rounded-full font-semibold;
+  }
+  .btn-blue {
+    @apply bg-blue-500 hover:bg-blue-600 duration-100 px-3 py-2 cursor-pointer md:px-4 md:py-3  rounded-sm font-semibold;
+  }
+  .lower {
+    @apply text-gray-500;
+  }
+  .medium {
+    @apply text-gray-700;
+  }
+}
